@@ -10,8 +10,7 @@
 - If you have `Nix` and `direnv` installed, you know the drill.
 - If you have `Nix` installed without  `direnv` use `nix develop`.
 
-> [INFO]
-> Do not forget to commit your files to git.
+> Do not forget to commit your files to git, otherwise Nix will not be happy.
 
 ### Without Nix
 
