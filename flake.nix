@@ -26,12 +26,14 @@
             (yarn.override { nodejs = nodejs_20; })
             #pnpm
             lychee #https://github.com/lycheeverse/lychee
+            lefthook #https://github.com/evilmartians/lefthook
             ];
 
           shellHook = ''
-          echo "Versions:"
+          echo "::Versions::"
           echo "Node: `${pkgs.nodejs_20}/bin/node --version`"
           echo "Lychee: `lychee --version`"
+          echo "Lefthook: `lefthook version`"
           #exec zsh
           '';
         };

@@ -1,0 +1,13 @@
+# lefthook.yml
+
+pre-commit:
+  commands:
+    vale-lint:
+      glob: "*.{md}"
+      run: vale {staged_files}
+    spell-check:
+      glob: "website/*.{md}"
+      run: website/node_modules/.bin/cspell {staged_files}
+    markdown-lint:
+      glob: "website/*.{md}"
+      run: website/node_modules/.bin/markdownlint {staged_files}
