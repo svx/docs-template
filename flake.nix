@@ -25,11 +25,13 @@
             vale
             (yarn.override { nodejs = nodejs_20; })
             #pnpm
+            lychee #https://github.com/lycheeverse/lychee
             ];
 
           shellHook = ''
           echo "Versions:"
           echo "Node: `${pkgs.nodejs_20}/bin/node --version`"
+          echo "Lychee: `lychee --version`"
           #exec zsh
           '';
         };
