@@ -14,4 +14,8 @@
 
 ### Without Nix
 
-Make sure to have `Node` and `pnpm` installed, see the [official documentation](https://pnpm.io/installation).
+Make sure to have `Node` and `yarn` installed.
+
+## Installation
+
+Change into the *website* directory and run `yarn` to install Docusaurus.
